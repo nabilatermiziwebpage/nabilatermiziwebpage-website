@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#2F4F4F">
+<center>
+<hr>
+<p style="color:white"><b>Click on the logo to get more information:</b><p>
+<hr>
+
+<a href="https://uitm.edu.my/index.php/en/">
+  <button onclick="sound()"><img src="uitm.jpg" alt="uitm" width="200" height="142"></button>
+</a>
+
+<a href="https://fskm.uitm.edu.my/v5/index.php/en/">
+  <button onclick="sound()"><img src="logo2.jpg" alt="fskm" width="200" height="142"></button>
+</a>
+
+<a href="https://istudent.uitm.edu.my/index_isp.htm">
+  <button onclick="sound()"><img src="download.jpg" alt="ufuture" width="300" height="142"></button>
+</a>
+<script>
+function sound(){
+     var snd = new Audio('sound1.mp3')//wav is also supported
+     snd.play()//plays the sound
+}
+</script>
+</center>
+</body>
+</html>

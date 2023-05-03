@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: #FF7F50;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #DEB887;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body style="background-color:#2F4F4F">
+<div class="row">
+  <div class="column" style="background-color:#ADD8E6">
+   <center>
+	<h2>RESUME FILE</h2>
+	<hr>	
+	<img src="resume.jpg" width="200" height="250">
+	<hr>
+	<center><button class="btn"><i class="fa fa-download"></i><a style="text-decoration: none;color:white" href="resume.pdf" download> Download</a></button></center>
+   </center>
+  </div>
+  <div class="column" style="background-color:#20B2AA">
+	<center>
+    <h2>TIMETABLE</h2>
+	<hr>
+	<img src="timetable.jpg" width="400" height="250">
+	<hr>
+	<center><button class="btn"><i class="fa fa-download"></i><a style="text-decoration: none;color:white" href="timetable.jpg" download> Download</a></button></center>
+   </center>
+  </div>
+  <div class="column" style="background-color:#AFEEEE">
+	<center>
+    <h2>PDF FILES</h2>
+    <hr>
+	<center><button class="btn"><i class="fa fa-folder"></i><a style="text-decoration:none; color:white" href="#" download></a></button></center>
+	<hr>
+  </div>
+</div>
+
+</body>
+</html>

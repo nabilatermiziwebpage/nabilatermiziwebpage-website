@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.child{
+	text-align:left;
+	background-color:white;
+	margin:auto;
+	width:70%;
+	padding:20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+.cancelbtn,.clearbtn {
+  width: 50%;
+  padding: 10px 12px;
+  background-color: #f44336;
+  float: left;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+.container {
+  padding: 12px;
+}
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+@media screen and (max-width: 50px) {
+  .cancelbtn,.clearbtn,{
+     width: 50%;
+  }
+ }
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color:#2F4F4F">
+<div class="child">
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+	<label for="fname"><b>First Name:</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+
+	<label for="lname"><b>Last Name:</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+	
+	<label for="gender"><b>Gender: </b></label>
+	<label for="male">Male:</label><input type="radio" id="male" name="gender" value="Male">
+	<label for="female">Female:</label><input type="radio" id="female" name="gender" value="Female">
+	<label for="other">Other:</label><input type="radio" id="other" name="gender" value="Other"><br><br>
+	
+	<label for="address1"><b>Address 1:</b></label>
+	<textarea id="about" name="about" rows="2" cols:"30"> your first address</textarea><br><br>
+	<label for="address2"><b>Address 2:</b></label>
+	<textarea id="about" name="about" rows="2" cols:"30"> Your second address</textarea><br><br>
+	
+	<label for="city"><b>City:</b></label>
+    <input type="text" placeholder="Enter City" name="city" id="city" required>
+	
+	<label for="state"><b>State:</b></label>
+    <input type="text" placeholder="Enter State" name="state" id="state" required>
+	
+	<label for="pnumber"><b>Phone Number:</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="pnumber" id="pnumber" required>
+	
+	<label for="education">Education Background:</label>
+	<select id="education" name="education">
+		<option value="selecteducation">Select</option>
+		<option value="spm">SPM</option>
+		<option value="diploma">Diploma</option>
+		<option value="degree">Degree</option>
+		<option value="master">Master</option>
+		<option value="phd">PHD</option>
+	</select><br><br>
+	
+    <label for="email"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+	<label for="uname"><b>Username:</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+	
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+	<button type="reset" class="clearbtn">clear</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Login</a>.</p>
+  </div>
+</form>
+</div>
+
+</body>
+</html>

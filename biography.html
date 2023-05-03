@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allison' rel='stylesheet'>
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #DEB887;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #FAEBD7;
+  padding: 30px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 40px;
+  width: 70%;
+  background-color: #FFE4C4;
+  height:400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FF7F50;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>About Me</h2>
+  <p><i>Details are Everything.</i></p>
+</header>
+
+<section>
+  <nav>
+    <ul>
+	<hr>
+      <li><center><img src="fatin.jpg" width="40%" height="20%"></center></li>
+    <hr>
+	  <h2 style="font-family:courier"><center>Nabilah Termizi</center></h2>
+	<hr>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="background-color: #CD853F; font-family:courier; color:white; text-align:center">BIOGRAPHY</h1>
+	<p> My name is Nur Fatin Nabilah Binti Mohamad Termizi, just call me Bella. I born on 1st April 2001. I am the eldest of five siblings.
+	We live at Kampung Gajah, Perak. I am 2nd year student of Bachelor of Computer Science in Netsentric. I am a full-time student,motivated by one of my inspired person 
+	for learning and succedding as I strive to become an outstanding and successful women in today's society.</p>
+	<p> Outside of my academic pursuits, I have doing part time job as promoter and doing a small business on my own.
+	I believes that a balanced lifestyle is essential for success and strives to maintain
+	a healthy work-life balance. </p>
+  </article>
+</section>
+
+<footer style="background-color:#A0522D; padding:64px; text-align:center">
+  <p>Find me on social media.</p>
+  <a href="https://www.facebook.com/nabilah.termizi.12?mibextid=LQQJ4d"><i style="font-size:25px" class="fa fa-facebook-official"></i></a>
+  <a href="https://instagram.com/nrftnabila?igshid=YmMyMTA2M2Y="><i style="font-size:25px" class="fa fa-instagram"></i></a>
+ <p class="w3-small">This website was made by Nabila Termizi !</p>
+ </footer>
+
+</body>
+</html>
